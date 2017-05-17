@@ -1,0 +1,40 @@
+@-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#maintitle {
+    -webkit-animation: slideDown 500ms both;
+    animation: slideDown 500ms both;
+}
+#noneofbullshit {
+    -webkit-animation: slideDown 500ms both;
+    animation: slideDown 500ms both;
+    animation-delay: 0.15s
+}
+#invite {
+    -webkit-animation: slideDown 500ms both;
+    animation: slideDown 500ms both;
+    animation-delay: 0.3s
+}
