@@ -38,3 +38,12 @@
     animation: slideDown 500ms both;
     animation-delay: 0.3s
 }
+
+#hero-picture {
+    -webkit-animation: slideDown 500ms both;
+    animation: slideDown 500ms both;
+    vertical-align: middle;
+    float: middle;
+    max-width: 50%;
+    max-height: 50%;
+}
