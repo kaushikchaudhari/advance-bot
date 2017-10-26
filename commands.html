@@ -8,539 +8,621 @@
         <link rel="icon" type="image/png" href="icon/koyomi1.png" />
     </head>
     <body>
-        <div class="container">
-            <nav class="nav">
-                <div class="nav-left">
-                    <a class="nav-item is-brand" href="index.html">
-                        <h1 class="title">Arararagi-San</h1>
-                    </a>
-                </div>
-                <div class="nav-center">
-                    <a class="nav-item" href='https://github.com/xNinjaKittyx/'>
-                        <span class="icon">
-                            <i class="fa fa-github">
-                            </i>
-                        </span>
-                    </a>
-                    <a class="nav-item" href='https://discord.gg/Fzz344U'>
-                        <span class="icon">
-                            <img src="icon/discord.png" />
-                        </span>
-                    </a>
-                </div>
-
-                <!-- This is for mobile -->
-                <span class="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-
-                <div id="nav-menu" class="nav-right nav-menu">
-                    <a class="nav-item" href="index.html">
-                        Home
-                    </a>
-                    <a class="nav-item is-active" href="commands.html">
-                        Commands
-                    </a>
-                    <a class="nav-item" href="https://discord.gg/Fzz344U">
-                        Support
-                    </a>
-                    <div class="nav-item">
-                        <div class="field is-grouped">
-                            <p class="control">
-                                <a class="button is-info" href="https://discordapp.com/api/oauth2/authorize?client_id=310366123759632385&scope=bot&permissions=0">
-                                    <span class="icon">
-                                        <i class="fa fa-thumbs-up">
-                                        </i>
-                                    </span>
-                                    <span>Invite</span>
-                                </a>
-                            </p>
+        <section class="hero is-dark is-fullheight has-text-centered">
+            <div class="hero-head">
+                <div class="container">
+                    <nav class="nav">
+                        <div class="nav-left">
+                            <a class="nav-item is-brand" href="index.html">
+                                <h1 class="title">Arararagi-San</h1>
+                            </a>
                         </div>
-                    </div>
+                        <div class="nav-center">
+                            <a class="nav-item" href='https://github.com/xNinjaKittyx/'>
+                                <span class="icon">
+                                    <i class="fa fa-github">
+                                    </i>
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- This is for mobile -->
+                        <span class="nav-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+
+                        <div id="nav-menu" class="nav-right nav-menu">
+                            <a class="nav-item is-active" href="index.html">
+                                Home
+                            </a>
+                            <a class="nav-item" href="commands.html">
+                                Commands
+                            </a>
+                            <a class="nav-item" href="https://discord.gg/Fzz344U">
+                                Support
+                            </a>
+                            <div class="nav-item">
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button is-info" href="https://discordapp.com/api/oauth2/authorize?client_id=310366123759632385&scope=bot&permissions=0">
+                                            <span class="icon">
+                                                <i class="fa fa-thumbs-up">
+                                                </i>
+                                            </span>
+                                            <span>Invite</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
-        </div>
-        <section class="hero is-dark">
+            </div>
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">
-                        KoyomiBot
-                    </h1>
-                    <h2 class="subtitle">
-                        Having fun with some moderation with <strong>none</strong> of the bullshit.
-                    </h2>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="columns">
-                    <div class="columns is-3">
-                        <aside class="menu">
-                            <p class="menu-label">
-                                Commands
-                            </p>
-                            <ul class="menu-list">
-                                <li><a class="is-active">All</a></li>
-                                <li><a>Anime</a></li>
-                                <li><a>Comics</a></li>
-                                <li><a>Info</a></li>
-                                <li><a>Osu</a></li>
-                                <li><a>Overwatch</a></li>
-                                <li><a>Pad</a></li>
-                                <li><a>Random</a></li>
-                                <li><a>Search</a></li>
-                                <li><a>Tags</a></li>
-                                <li><a>Word Counter</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                    <div class="column">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Command
-                                    </th>
-                                    <th>
-                                        Arguments
-                                    </th>
-                                    <th>
-                                        Notes
-                                    </th>
-                                </th>
-                            </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>
-                                        Command
-                                    </th>
-                                    <th>
-                                        Arguments
-                                    </th>
-                                    <th>
-                                        Notes
-                                    </th>
-                                </th>
-                            </tfoot>
-                            <tbody>
-                                <tr>
-                                    <th>
-                                        8ball
-                                    </th>
-                                    <th>
-                                        [question]
-                                    </th>
-                                    <th>
-                                        Responds like an 8ball.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        anime
-                                    </th>
-                                    <th>
-                                        [anime]
-                                    </th>
-                                    <th>
-                                        Searches [anime] on AniList.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        blackwords
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Shows blacklisted words for the word counter.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        choose
-                                    </th>
-                                    <th>
-                                        [choice1] [choice2] (choice3) ...
-                                    </th>
-                                    <th>
-                                        Chooses one of the choices.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        chrng
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Gives a randomly generated Cyanide&Happiness comic.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        cmdused
-                                    </th>
-                                    <th>
-                                        [command]
-                                    </th>
-                                    <th>
-                                        Shows how many times [command] has been used.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        ctb
-                                    </th>
-                                    <th>
-                                        [player]
-                                    </th>
-                                    <th>
-                                        Returns osu!CatchTheBeat stats for [player].
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        cyanide
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Gives a random Cyanide&Happiness comic.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        flip
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Flips a coin.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        gfy
-                                    </th>
-                                    <th>
-                                        [query]
-                                    </th>
-                                    <th>
-                                        Searches gfycat on [query] and returns a random gfy.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        help
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        PMs you the help message.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        manga
-                                    </th>
-                                    <th>
-                                        [manga]
-                                    </th>
-                                    <th>
-                                        Searches [manga] on AniList.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        mania
-                                    </th>
-                                    <th>
-                                        [player]
-                                    </th>
-                                    <th>
-                                        Returns osu!Mania stats of [player].
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        meow
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns random cat.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        osu
-                                    </th>
-                                    <th>
-                                        [player]
-                                    </th>
-                                    <th>
-                                        Returns osu!Standard stats of [player]
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        owgif
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns random OverWatch gif.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        owrng
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns a random OverWatch hero.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        owstats
-                                    </th>
-                                    <th>
-                                        [region] [battletag]
-                                    </th>
-                                    <th>
-                                        Returns OverWatch Stats. Supports EU, KR, NA regions.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        owteam
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns a randomized OverWatch Team.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        pad
-                                    </th>
-                                    <th>
-                                        [monster]
-                                    </th>
-                                    <th>
-                                        Looks for pad monster. If ambiguous, it will ask you to choose one.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        ping
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Pong!
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        roll
-                                    </th>
-                                    <th>
-                                        (XdY)
-                                    </th>
-                                    <th>
-                                        Rolls X dices with Y faces. Defaults to 1d6.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        safebooru
-                                    </th>
-                                    <th>
-                                        [query]
-                                    </th>
-                                    <th>
-                                        Searches [query] on safebooru.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        stats
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Shows you stats of the bot.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        tag
-                                    </th>
-                                    <th>
-                                        [tagname]
-                                    </th>
-                                    <th>
-                                        Returns tag content if exists.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        tag add
-                                    </th>
-                                    <th>
-                                        [tagname]
-                                    </th>
-                                    <th>
-                                        Adds [tagname] as a tag and then asks you after what content to put into it.
-                                        Note: Tags can only be removed by NinjaKitty#1685
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        tag search
-                                    </th>
-                                    <th>
-                                        [query]
-                                    </th>
-                                    <th>
-                                        Searches for tags that contain [query].
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        taiko
-                                    </th>
-                                    <th>
-                                        [player]
-                                    </th>
-                                    <th>
-                                        Returns osu!Taiko stats of [player].
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        topcmds
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns the top 10 used commands.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        topwords
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns the top 10 used words.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        uptime
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns uptime.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        woof
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns random dog.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        wiki
-                                    </th>
-                                    <th>
-                                        [query]
-                                    </th>
-                                    <th>
-                                        Searches wikipedia for [query].
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        wordused
-                                    </th>
-                                    <th>
-                                        [word]
-                                    </th>
-                                    <th>
-                                        Returns how many times [word] was used in chat.
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        xkcd
-                                    </th>
-                                    <th>
-
-                                    </th>
-                                    <th>
-                                        Returns xkcd comic.
-                                    </th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="content has-text-centered">
                     <p>
-                        <strong>KoyomiBot</strong> by Daniel Ahn. Powered by <a href='https://github.com/Rapptz/discord.py'>discord.py</a>. Footerbullshit. Enjoy my bot. <em>Kkthx.</em>
+                        <img id="hero-picture" src="bg.png" width="50%"/>
                     </p>
-                    <div class="nav-center">
-                        <a class="nav-item" href='https://github.com/xNinjaKittyx/'>
+                    <h1 id="maintitle" class="title">
+                        Koyomi
+                    </h1>
+                    <h2 id="noneofbullshit" class="subtitle">
+                        Commands list is a work-in-progress. Come check again another time. (or use >help in discord)
+                    </h2>
+                    <p id="invite" class="hero-buttons">
+                        <a class="button is-info is-large" href="https://discordapp.com/api/oauth2/authorize?client_id=310366123759632385&scope=bot&permissions=0">
                             <span class="icon">
-                                <i class="fa fa-github">
+                                <i class="fa fa-thumbs-up">
                                 </i>
                             </span>
+                            <span>Invite</span>
                         </a>
-                        <a class="nav-item" href='https://discord.gg/Fzz344U'>
+                        <a class="button is-large" href='https://discord.gg/Fzz344U'>
                             <span class="icon">
-                                <img src="icon/discord.png" />
+                                <img src="icon/discord.png">
+                                </img>
                             </span>
+                            <span>Support</span>
                         </a>
-
-                    </div>
+                    </p>
                 </div>
             </div>
-        </footer>
+        </section>
+        <!--<div class="container">-->
+            <!--<nav class="nav is-dark">-->
+                <!--<div class="nav-left">-->
+                    <!--<a class="nav-item is-brand" href="index.html">-->
+                        <!--<h1 class="title">Arararagi-San</h1>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="nav-center">-->
+                    <!--<a class="nav-item" href='https://github.com/xNinjaKittyx/'>-->
+                        <!--<span class="icon">-->
+                            <!--<i class="fa fa-github">-->
+                            <!--</i>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                    <!--<a class="nav-item" href='https://discord.gg/Fzz344U'>-->
+                        <!--<span class="icon">-->
+                            <!--<img src="icon/discord.png" />-->
+                        <!--</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash; This is for mobile &ndash;&gt;-->
+                <!--<span class="nav-toggle">-->
+                    <!--<span></span>-->
+                    <!--<span></span>-->
+                    <!--<span></span>-->
+                <!--</span>-->
+
+                <!--<div id="nav-menu" class="nav-right nav-menu">-->
+                    <!--<a class="nav-item" href="index.html">-->
+                        <!--Home-->
+                    <!--</a>-->
+                    <!--<a class="nav-item is-active" href="commands.html">-->
+                        <!--Commands-->
+                    <!--</a>-->
+                    <!--<a class="nav-item" href="https://discord.gg/Fzz344U">-->
+                        <!--Support-->
+                    <!--</a>-->
+                    <!--<div class="nav-item">-->
+                        <!--<div class="field is-grouped">-->
+                            <!--<p class="control">-->
+                                <!--<a class="button is-info" href="https://discordapp.com/api/oauth2/authorize?client_id=310366123759632385&scope=bot&permissions=0">-->
+                                    <!--<span class="icon">-->
+                                        <!--<i class="fa fa-thumbs-up">-->
+                                        <!--</i>-->
+                                    <!--</span>-->
+                                    <!--<span>Invite</span>-->
+                                <!--</a>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</nav>-->
+        <!--</div>-->
+        <!--<section class="hero is-dark">-->
+            <!--<div class="hero-body">-->
+                <!--<div class="container">-->
+                    <!--<h1 class="title">-->
+                        <!--KoyomiBot-->
+                    <!--</h1>-->
+                    <!--<h2 class="subtitle">-->
+                        <!--Having fun with some moderation with <strong>none</strong> of the bullshit.-->
+                    <!--</h2>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section>-->
+
+        <!--<section class="section">-->
+            <!--<div class="container">-->
+                <!--<div class="columns">-->
+                    <!--<div class="columns is-3">-->
+                        <!--<aside class="menu">-->
+                            <!--<p class="menu-label">-->
+                                <!--Commands-->
+                            <!--</p>-->
+                            <!--<ul class="menu-list">-->
+                                <!--<li><a class="is-active">All</a></li>-->
+                                <!--<li><a>Anime</a></li>-->
+                                <!--<li><a>Comics</a></li>-->
+                                <!--<li><a>Info</a></li>-->
+                                <!--<li><a>Osu</a></li>-->
+                                <!--<li><a>Overwatch</a></li>-->
+                                <!--<li><a>Pad</a></li>-->
+                                <!--<li><a>Random</a></li>-->
+                                <!--<li><a>Search</a></li>-->
+                                <!--<li><a>Tags</a></li>-->
+                                <!--<li><a>Word Counter</a></li>-->
+                            <!--</ul>-->
+                        <!--</aside>-->
+                    <!--</div>-->
+                    <!--<div class="column">-->
+                        <!--<table class="table">-->
+                            <!--<thead>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--Command-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Arguments-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Notes-->
+                                    <!--</th>-->
+                                <!--</th>-->
+                            <!--</thead>-->
+                            <!--<tfoot>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--Command-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Arguments-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Notes-->
+                                    <!--</th>-->
+                                <!--</th>-->
+                            <!--</tfoot>-->
+                            <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--8ball-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[question]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Responds like an 8ball.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--anime-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[anime]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Searches [anime] on AniList.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--blackwords-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Shows blacklisted words for the word counter.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--choose-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[choice1] [choice2] (choice3) ...-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Chooses one of the choices.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--chrng-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Gives a randomly generated Cyanide&Happiness comic.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--cmdused-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[command]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Shows how many times [command] has been used.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--ctb-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[player]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns osu!CatchTheBeat stats for [player].-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--cyanide-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Gives a random Cyanide&Happiness comic.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--flip-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Flips a coin.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--gfy-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[query]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Searches gfycat on [query] and returns a random gfy.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--help-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--PMs you the help message.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--manga-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[manga]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Searches [manga] on AniList.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--mania-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[player]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns osu!Mania stats of [player].-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--meow-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns random cat.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--osu-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[player]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns osu!Standard stats of [player]-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--owgif-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns random OverWatch gif.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--owrng-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns a random OverWatch hero.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--owstats-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[region] [battletag]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns OverWatch Stats. Supports EU, KR, NA regions.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--owteam-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns a randomized OverWatch Team.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--pad-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[monster]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Looks for pad monster. If ambiguous, it will ask you to choose one.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--ping-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Pong!-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--roll-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--(XdY)-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Rolls X dices with Y faces. Defaults to 1d6.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--safebooru-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[query]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Searches [query] on safebooru.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--stats-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Shows you stats of the bot.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--tag-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[tagname]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns tag content if exists.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--tag add-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[tagname]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Adds [tagname] as a tag and then asks you after what content to put into it.-->
+                                        <!--Note: Tags can only be removed by NinjaKitty#1685-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--tag search-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[query]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Searches for tags that contain [query].-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--taiko-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[player]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns osu!Taiko stats of [player].-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--topcmds-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns the top 10 used commands.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--topwords-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns the top 10 used words.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--uptime-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns uptime.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--woof-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns random dog.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--wiki-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[query]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Searches wikipedia for [query].-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--wordused-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--[word]-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns how many times [word] was used in chat.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!--xkcd-->
+                                    <!--</th>-->
+                                    <!--<th>-->
+
+                                    <!--</th>-->
+                                    <!--<th>-->
+                                        <!--Returns xkcd comic.-->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                            <!--</tbody>-->
+                        <!--</table>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section>-->
+        <!--<footer class="footer">-->
+            <!--<div class="container">-->
+                <!--<div class="content has-text-centered">-->
+                    <!--<p>-->
+                        <!--<strong>KoyomiBot</strong> by Daniel Ahn. Powered by <a href='https://github.com/Rapptz/discord.py'>discord.py</a>. Footerbullshit. Enjoy my bot. <em>Kkthx.</em>-->
+                    <!--</p>-->
+                    <!--<div class="nav-center">-->
+                        <!--<a class="nav-item" href='https://github.com/xNinjaKittyx/'>-->
+                            <!--<span class="icon">-->
+                                <!--<i class="fa fa-github">-->
+                                <!--</i>-->
+                            <!--</span>-->
+                        <!--</a>-->
+                        <!--<a class="nav-item" href='https://discord.gg/Fzz344U'>-->
+                            <!--<span class="icon">-->
+                                <!--<img src="icon/discord.png" />-->
+                            <!--</span>-->
+                        <!--</a>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</footer>-->
     </body>
 </html>
